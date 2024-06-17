@@ -8,13 +8,18 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        podkova: ["var(--font-podkova)"],
+      },
+      colors: {
+        blue: "#0177FB",
+        black: "#141736",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        heroContainer: "url('/assets/Homepage/Hero/blueRectangle.svg')",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
 export default config;
